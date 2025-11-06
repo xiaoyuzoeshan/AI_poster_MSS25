@@ -2,7 +2,6 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8">
-  <title>个人主页</title>
   <meta name="viewport" content="width=384, initial-scale=1.0">
   <style>
     html, body {
@@ -10,143 +9,52 @@
       margin: 0;
       width: 384px;
       height: 6009px;
-    }
-    body {
-      width: 384px;
-      height: 6009px;
-      min-height: 6009px;
-      background: linear-gradient(to bottom, #3951A2 0%, #000000 100%);
-      color: #fff;
-      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+      background: #000;
       box-sizing: border-box;
+      overflow: hidden;
+    }
+    .canva-embed-container {
       position: relative;
+      width: 100vw;
+      height: 100vh;
+      min-height: 6009px;
+      box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      will-change: transform;
+      background: #000;
     }
-    header {
-      padding-top: 40px;
-      text-align: center;
-      font-size: 2em;
-      font-weight: bold;
-    }
-    section {
-      margin: 40px 20px 0 20px;
-      background: rgba(0,0,0,0.3);
-      border-radius: 8px;
-      padding: 24px;
-      box-shadow: 0 2px 8px rgba(57,81,162,0.15);
-      position: relative;
-      z-index: 2;
-    }
-    .DF_utQ {
+    .canva-embed-container iframe {
       position: absolute;
-      z-index: 9;
-      pointer-events: none;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background: #000;
     }
-    footer {
-      padding: 40px 0 20px 0;
-      text-align: center;
+    .canva-link {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      padding: 4px 10px;
+      border-radius: 5px;
       font-size: 1em;
-      opacity: 0.6;
-      color: #aaa;
+      text-decoration: none;
+      z-index: 99;
     }
   </style>
 </head>
 <body>
-  <header>
-    欢迎来到我的个人主页
-  </header>
-  <section>
-    <h2>关于我</h2>
-    <p>
-      这里可以填写你的个人简介、兴趣爱好、技能等内容。
-      你可以介绍自己、分享自己的成长经历、或者上传一张个人照片。
-    </p>
-  </section>
-  <section>
-    <h2>作品展示</h2>
-    <p>
-      你可以在这里展示你的项目或作品，比如你的AI项目、设计、摄影等。
-    </p>
-
-    <!-- 嵌入 Canva 作品 -->
-    <div style="position: relative; width: 100%; height: 0; padding-top: 437.2621%;
-    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;">
-      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-        src="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-      </iframe>
-    </div>
-    <a href="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?utm_content=DAG3rccS44w&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">首页</a> by Xiaoyu Zoe Shan
-  </section>
-  <section>
-    <h2>联系方式</h2>
-    <p>
-      如果你愿意公开联系方式，可以放邮箱、Github、微信、微博等链接。
-    </p>
-  </section>
-
-  <!-- 多个装饰线条，全部计入 -->
-  <div class="DF_utQ" style="width: 192.669px; height: 35.6496px; transform: translate(30.1303px, 674.306px) rotate(-47.1043deg);">
-    <div class="V7MmMA" style="transform: scale(1); width: 192.669px; height: 35.6496px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 192.669px; height: 35.6496px;">
-        <path d="M0.4983245080144343,35.18102265942275C4.293443777532312,-11.060340886474364 68.29208238660124,-11.060340886474364 192.4942403352212,35.18102265942275" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.4983245080144343,35.18102265942275C4.293443777532312,-11.060340886474364 68.29208238660124,-11.060340886474364 192.4942403352212,35.18102265942275" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
+  <div class="canva-embed-container">
+    <iframe loading="lazy" src="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    <a class="canva-link" href="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?utm_content=DAG3rccS44w&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">首页 by Xiaoyu Zoe Shan</a>
   </div>
-  <div class="DF_utQ" style="width: 192.669px; height: 35.6496px; transform: translate(30.1303px, 674.306px) rotate(-47.1043deg);">
-    <div class="V7MmMA" style="transform: scale(1); width: 192.669px; height: 35.6496px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 192.669px; height: 35.6496px;">
-        <path d="M0.4983245080144343,35.18102265942275C4.293443777532312,-11.060340886474364 68.29208238660124,-11.060340886474364 192.4942403352212,35.18102265942275" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.4983245080144343,35.18102265942275C4.293443777532312,-11.060340886474364 68.29208238660124,-11.060340886474364 192.4942403352212,35.18102265942275" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
-  </div>
-  <div class="DF_utQ" style="width: 49.772px; height: 9.83757px; transform: translate(10.9338px, 208.519px) rotate(-47.1043deg);">
-    <div class="V7MmMA" style="transform: scale(1); width: 49.772px; height: 9.83757px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 49.772px; height: 9.83757px;">
-        <path d="M0.4983245080142922,9.368995691454103C1.4688523030118006,-2.456331897151424 17.835256940406396,-2.456331897151424 49.59753842019808,9.368995691454103" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.4983245080142922,9.368995691454103C1.4688523030118006,-2.456331897151424 17.835256940406396,-2.456331897151424 49.59753842019808,9.368995691454103" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
-  </div>
-  <div class="DF_utQ" style="width: 72.1755px; height: 12.1318px; transform: translate(33.4621px, 253.403px) rotate(36.313deg); opacity: 0.87;">
-    <div class="V7MmMA" style="transform: scale(1); width: 72.1755px; height: 12.1318px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 72.1755px; height: 12.1318px;">
-        <path d="M0.1325795336674105,11.649654174840975C54.19094214792837,-3.216551391613601 77.61412452769396,-3.216551391613601 70.40212667296416,11.649654174840975" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.1325795336674105,11.649654174840975C54.19094214792837,-3.216551391613601 77.61412452769396,-3.216551391613601 70.40212667296416,11.649654174840975" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
-  </div>
-  <div class="DF_utQ" style="width: 106.854px; height: 15.6768px; transform: translate(1.70991px, 378.847px) rotate(36.1677deg); opacity: 0.55;">
-    <div class="V7MmMA" style="transform: scale(1); width: 106.854px; height: 15.6768px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 106.854px; height: 15.6768px;">
-        <path d="M0.11807544674476844,15.190976842370617C80.71887476045912,-4.396992280790165 115.45610671913447,-4.396992280790165 104.3297713227708,15.190976842370617" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.11807544674476844,15.190976842370617C80.71887476045912,-4.396992280790165 115.45610671913447,-4.396992280790165 104.3297713227708,15.190976842370617" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
-  </div>
-  <div class="DF_utQ" style="width: 109.491px; height: 39.3361px; transform: translate(0.174998px, 467.726px) rotate(125.498deg); opacity: 0.55;">
-    <div class="V7MmMA" style="transform: scale(1); width: 109.491px; height: 39.3361px;">
-      <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 109.491px; height: 39.3361px;">
-        <path d="M0.30329895957140707,0.3975043913252989C67.47364355813416,51.649002677608316 103.70360288853482,51.64900267760834 108.99317695077337,0.39750439132535575" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="auto" opacity="0" class="_682gpw" style="touch-action: pan-x pan-y pinch-zoom;"></path>
-        <g>
-          <path d="M0.30329895957140707,0.3975043913252989C67.47364355813416,51.649002677608316 103.70360288853482,51.64900267760834 108.99317695077337,0.39750439132535575" stroke-dasharray="6,1" stroke-linecap="butt" stroke-width="1" fill="none" pointer-events="none"></path>
-        </g>
-      </svg>
-    </div>
-  </div>
-  <footer>
-    版权所有 &copy; 2025 by 你的名字
-  </footer>
 </body>
 </html>
