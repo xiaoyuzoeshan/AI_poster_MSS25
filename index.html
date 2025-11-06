@@ -15,11 +15,11 @@
       width: 384px;
       height: 6009px;
       min-height: 6009px;
-      /* 渐变背景：从#3951A2顶端到底部#000000 */
       background: linear-gradient(to bottom, #3951A2 0%, #000000 100%);
       color: #fff;
       font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
       box-sizing: border-box;
+      position: relative;
     }
     header {
       padding-top: 40px;
@@ -33,6 +33,13 @@
       border-radius: 8px;
       padding: 24px;
       box-shadow: 0 2px 8px rgba(57,81,162,0.15);
+      position: relative;
+      z-index: 2;
+    }
+    .DF_utQ {
+      position: absolute;
+      z-index: 9;
+      pointer-events: none;
     }
     footer {
       padding: 40px 0 20px 0;
@@ -59,14 +66,25 @@
     <p>
       你可以在这里展示你的项目或作品，比如你的AI项目、设计、摄影等。
     </p>
+
+    <!-- 嵌入 Canva 作品 -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 437.2621%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+      </iframe>
+    </div>
+    <a href="https://www.canva.com/design/DAG3rccS44w/FBDRr5y7lXz4gO9LwEwHow/view?utm_content=DAG3rccS44w&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">首页</a> by Xiaoyu Zoe Shan
   </section>
-    <!-- 装饰线条，插入位置可视化调整 -->
-下面是整理后的 index.html 文件片段，包含你全部提出的装饰线条（包括重复的那一条），建议仍然集中放在页面主体内容和 footer 之间。如果你需要插入到其它具体位置，也可以说明。
+  <section>
+    <h2>联系方式</h2>
+    <p>
+      如果你愿意公开联系方式，可以放邮箱、Github、微信、微博等链接。
+    </p>
+  </section>
 
-你只需将以下内容放在 `<footer>` 之前即可：
-
-```html
-  <!-- 多个装饰线条（可重复添加，全部计入） -->
+  <!-- 多个装饰线条，全部计入 -->
   <div class="DF_utQ" style="width: 192.669px; height: 35.6496px; transform: translate(30.1303px, 674.306px) rotate(-47.1043deg);">
     <div class="V7MmMA" style="transform: scale(1); width: 192.669px; height: 35.6496px;">
       <svg class="Fe_H_Q" style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255); width: 192.669px; height: 35.6496px;">
@@ -127,18 +145,6 @@
       </svg>
     </div>
   </div>
-```
-
-请确认，或如需帮你生成完整 index.html 文件请回复“确认”，我将为你一键集成、并可自动保存到 GitHub 仓库。
-
-  
-  
-  <section>
-    <h2>联系方式</h2>
-    <p>
-      如果你愿意公开联系方式，可以放邮箱、Github、微信、微博等链接。
-    </p>
-  </section>
   <footer>
     版权所有 &copy; 2025 by 你的名字
   </footer>
